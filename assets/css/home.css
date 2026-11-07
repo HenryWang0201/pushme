@@ -1,0 +1,372 @@
+/* Homepage product showcase. Legal pages do not load this file. */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.home {
+  background: #f6f5f7;
+  background-image:
+    radial-gradient(ellipse 70% 42% at 100% -8%, rgba(232, 213, 255, 0.55), transparent 55%),
+    radial-gradient(ellipse 55% 36% at -10% 18%, rgba(252, 231, 243, 0.65), transparent 50%);
+  background-attachment: fixed;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+body.home main {
+  max-width: 1120px;
+  padding: 2.75rem 1.5rem 4.5rem;
+}
+
+body.home :is(#path, #screenshots, .feature, .note) {
+  scroll-margin-top: 8.5rem;
+}
+
+body.home .header-inner,
+body.home .site-footer {
+  max-width: 1120px;
+}
+
+body.home h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.35rem, 5vw, 4.15rem);
+  line-height: 1.18;
+  letter-spacing: normal;
+  font-weight: 700;
+  color: #1b1724;
+}
+
+html[lang="en"] body.home h1 {
+  letter-spacing: -0.03em;
+}
+
+body.home h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.7rem, 3vw, 2.25rem);
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1b1724;
+}
+
+body.home h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.2rem;
+  line-height: 1.35;
+  color: #1b1724;
+}
+
+body.home p {
+  margin: 0 0 1rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  z-index: 100;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: #fff;
+  color: #1b1724;
+  font-weight: 700;
+  text-decoration: none;
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.skip-link:focus {
+  clip-path: none;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
+body.home :focus-visible {
+  outline: 3px solid #6d28d9;
+  outline-offset: 3px;
+}
+
+.kicker {
+  margin: 0 0 0.85rem;
+  color: #6d28d9;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.intro {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+  margin-bottom: 4.5rem;
+}
+
+.lede {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #3c3648;
+}
+
+.intro .actions {
+  margin: 1.35rem 0 0.85rem;
+}
+
+.quiet {
+  color: #5c5668;
+  font-size: 0.95rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.6rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.btn-primary {
+  background: #6d28d9;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #5b21b6;
+  color: #fff;
+}
+
+.btn-ghost {
+  background: #fff;
+  color: #1b1724;
+  border-color: #e4dcf2;
+}
+
+.btn-ghost:hover {
+  border-color: #c4b5fd;
+  background: #faf7ff;
+  color: #1b1724;
+}
+
+.section {
+  margin: 0 0 4.5rem;
+}
+
+.section-intro {
+  max-width: 40rem;
+  margin-bottom: 1.75rem;
+  color: #3c3648;
+}
+
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.steps li {
+  background: #fff;
+  border: 1px solid #ece7f2;
+  border-radius: 18px;
+  padding: 1.2rem 1.25rem 0.4rem;
+  box-shadow: 0 10px 30px rgba(70, 40, 110, 0.04);
+}
+
+.num {
+  display: inline-block;
+  margin-right: 0.35rem;
+  color: #6d28d9;
+  font-variant-numeric: tabular-nums;
+}
+
+.feature {
+  display: grid;
+  gap: 1.75rem;
+  align-items: center;
+  padding: 2.75rem 0;
+  border-top: 1px solid #ece7f2;
+}
+
+.feature:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.feature p:last-child {
+  margin-bottom: 0;
+}
+
+.shot {
+  margin: 0;
+  min-width: 0;
+}
+
+.phone {
+  width: min(100%, 380px);
+  margin-inline: auto;
+  padding: 12px;
+  border-radius: 2.35rem;
+  background: linear-gradient(165deg, #2c2935, #14131a);
+  box-shadow:
+    0 24px 50px rgba(48, 24, 80, 0.12),
+    0 2px 8px rgba(48, 24, 80, 0.05);
+}
+
+.phone img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.75rem;
+  background: #fff;
+}
+
+.shot figcaption {
+  max-width: 38rem;
+  margin: 0.9rem auto 0;
+  color: #5c5668;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.shot figcaption p {
+  margin: 0 0 0.35rem;
+}
+
+.shot figcaption a {
+  font-weight: 700;
+}
+
+.note {
+  background: #fff;
+  border: 1px solid #eadff8;
+  border-radius: 20px;
+  padding: 1.6rem 1.4rem 0.6rem;
+  box-shadow: 0 10px 30px rgba(70, 40, 110, 0.04);
+}
+
+.note p:last-child {
+  margin-bottom: 1rem;
+}
+
+body.home .site-footer {
+  padding-top: 2rem;
+}
+
+body.home .site-footer p {
+  margin: 0.35rem 0;
+}
+
+@media (max-width: 720px) {
+  body.home .header-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+  }
+
+  body.home .brand {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  body.home .lang-toggle {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+  }
+
+  body.home .nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+
+@media (min-width: 800px) {
+  .steps {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 721px) {
+  body.home :is(#path, #screenshots, .feature, .note) {
+    scroll-margin-top: 5.25rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .intro {
+    grid-template-columns: minmax(0, 1.05fr) minmax(280px, 400px);
+    gap: 4rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .intro .shot figcaption {
+    text-align: left;
+    margin-inline: 0;
+  }
+
+  .feature {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+    gap: 4rem;
+    padding: 3.5rem 0;
+  }
+
+  .feature.reverse {
+    grid-template-columns: minmax(280px, 380px) minmax(0, 1fr);
+  }
+
+  .feature.reverse .feature-copy {
+    order: 2;
+  }
+
+  .feature .shot figcaption {
+    text-align: left;
+    margin-inline: 0;
+  }
+
+  .note {
+    padding: 2rem 2rem 1rem;
+  }
+}
+
+@media (max-width: 959px) {
+  .feature .feature-copy {
+    order: 1;
+  }
+
+  .feature .shot {
+    order: 2;
+  }
+}
+
+@media (forced-colors: active) {
+  body.home .btn-primary,
+  body.home .btn-ghost,
+  body.home .phone {
+    border: 1px solid ButtonText;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body.home {
+    background-attachment: scroll;
+  }
+}

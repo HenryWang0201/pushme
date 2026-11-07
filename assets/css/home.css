@@ -19,6 +19,10 @@ body.home main {
   padding: 2.75rem 1.5rem 4.5rem;
 }
 
+body.home :is(#path, #screenshots, .feature, .note) {
+  scroll-margin-top: 8.5rem;
+}
+
 body.home .header-inner,
 body.home .site-footer {
   max-width: 1120px;
@@ -294,6 +298,12 @@ body.home .site-footer p {
 @media (min-width: 800px) {
   .steps {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 721px) {
+  body.home :is(#path, #screenshots, .feature, .note) {
+    scroll-margin-top: 5.25rem;
   }
 }
 

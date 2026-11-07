@@ -3,11 +3,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PushMe — AI task-nudging with a digital avatar. Privacy, terms, and support.">
-  <title>PushMe — AI Task Nudging</title>
+  <title>PushMe — Another you, for the next real step</title>
+  <meta name="description" content="PushMe is a native iOS app in development preview. A companion helps you turn a goal into a plan you review, then one concrete next action.">
+  <link rel="canonical" href="https://henrywang0201.github.io/pushme/">
+  <link rel="alternate" hreflang="en" href="https://henrywang0201.github.io/pushme/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://henrywang0201.github.io/pushme/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://henrywang0201.github.io/pushme/">
+  <meta property="og:title" content="PushMe — Another you, for the next real step">
+  <meta property="og:description" content="A native iOS companion for turning a goal into a reviewed plan and one next action. Development preview.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://henrywang0201.github.io/pushme/">
+  <meta property="og:image" content="https://henrywang0201.github.io/pushme/assets/screenshots/today.png">
+  <meta property="og:locale" content="en">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f6f5f7">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PushMe",
+    "operatingSystem": "iOS",
+    "applicationCategory": "LifestyleApplication",
+    "url": "https://henrywang0201.github.io/pushme/",
+    "description": "A native iOS companion that helps turn a goal into a reviewed plan and a concrete next action.",
+    "author": {
+      "@type": "Person",
+      "name": "Yiheng Wang"
+    },
+    "inLanguage": ["en", "zh-Hans"]
+  }
+  </script>
 </head>
-<body>
+<body class="home">
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html">
@@ -15,45 +47,153 @@
         PushMe
       </a>
       <nav class="nav" aria-label="Primary">
-        <a href="index.html" aria-current="page">Home</a>
+        <a href="#path">How it works</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="support.html">Support</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
-        <a href="support.html">Support</a>
       </nav>
       <a class="lang-toggle" href="zh/index.html" hreflang="zh-Hans">中文</a>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>PushMe</h1>
-      <p class="tagline">AI-powered task nudging with a digital avatar that grows with your progress.</p>
-      <p>PushMe helps you break goals into manageable steps, schedule reminders, and stay motivated through streaks and a companion avatar. Task breakdown is assisted by AI; you stay in control of what you confirm and act on.</p>
-      <p class="app-store-note">Available on the App Store in all regions except mainland China. Operated by Yiheng Wang (individual developer).</p>
+  <main id="main">
+    <section class="intro" aria-labelledby="hero-title">
+      <div>
+        <p class="kicker">Development preview · native iOS</p>
+        <h1 id="hero-title">Another you, for the next real step.</h1>
+        <p class="lede">PushMe is a native iOS app. A companion, another you, helps turn a goal into something you can start today.</p>
+        <p>Say the goal in everyday language. PushMe drafts a staged plan. You read it, change it, and confirm it. Today then shows the next concrete action, with a time and a duration. You can start it, mark it done, or postpone it by 15 minutes. XP, level, a streak, and five growth dimensions record the progress you keep.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#path">See how it works</a>
+          <a class="btn btn-ghost" href="#screenshots">View screenshots</a>
+          <a class="btn btn-ghost" href="support.html">Support</a>
+        </div>
+        <p class="quiet">This page is a development preview. It does not include an App Store or TestFlight link.</p>
+      </div>
+      <figure class="shot">
+        <div class="phone">
+          <picture>
+            <img src="assets/screenshots/today.png" srcset="assets/screenshots/today.png 804w, assets/screenshots/full/today.png 1206w" sizes="(min-width: 960px) 360px, calc(100vw - 4.5rem)" width="1206" height="2622" alt="PushMe Today screen in Chinese, using demo data. A green Sprout companion sits beside a 19:00 swimming action, with start, complete, and postpone controls, plus level, XP, a streak, and five growth dimensions." fetchpriority="high" decoding="async">
+          </picture>
+        </div>
+        <figcaption>
+          <p>Chinese interface, using demo data. Today, with Sprout and the next action.</p>
+          <p><a href="assets/screenshots/full/today.png">Full-size screenshot</a></p>
+        </figcaption>
+      </figure>
     </section>
 
-    <div class="card-grid">
-      <article class="card">
-        <h2>Privacy Policy</h2>
-        <p>What we collect, how AI processors are used, your rights, and how to delete data.</p>
-        <a class="stretch" href="privacy.html">Read privacy policy →</a>
+    <section class="section" id="path" aria-labelledby="path-title">
+      <h2 id="path-title">From a goal to the next action</h2>
+      <p class="section-intro">The path is short on purpose. You stay in the loop at every step that matters.</p>
+      <ol class="steps">
+        <li>
+          <h3><span class="num" aria-hidden="true">1</span> Talk it through</h3>
+          <p>Describe the goal the way you would to another person. Chat is where you discuss it and adjust what comes next.</p>
+        </li>
+        <li>
+          <h3><span class="num" aria-hidden="true">2</span> Review the plan</h3>
+          <p>PushMe proposes a staged task plan with AI assistance. You can change it. Nothing is set until you confirm.</p>
+        </li>
+        <li>
+          <h3><span class="num" aria-hidden="true">3</span> Take the next step</h3>
+          <p>Today shows one concrete action, with its time and duration. Start it, mark it complete, or postpone it by 15 minutes.</p>
+        </li>
+        <li>
+          <h3><span class="num" aria-hidden="true">4</span> See the growth</h3>
+          <p>Finishing an action adds XP. Level, a streak, and five growth dimensions stay with that progress.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="screenshots" aria-labelledby="screenshots-title">
+      <h2 id="screenshots-title">In the app</h2>
+      <p class="section-intro">These are real screens from the iOS app. The interface is in Chinese, and the goals are demo data.</p>
+
+      <article class="feature">
+        <div class="feature-copy">
+          <h3>Today keeps the next action close</h3>
+          <p>Sprout, a small green plant, is the current default companion. On Today it sits with the action in front of you. In this demo that action is a 45-minute swim at 19:00, part of learning to swim in two weeks.</p>
+          <p>The card shows the time, the duration, and the growth tied to finishing it. You can start, mark it done, or postpone by 15 minutes. Level, XP, a streak, and five growth dimensions are on the same screen.</p>
+        </div>
+        <figure class="shot">
+          <div class="phone">
+            <picture>
+              <img src="assets/screenshots/today.png" srcset="assets/screenshots/today.png 804w, assets/screenshots/full/today.png 1206w" sizes="(min-width: 960px) 360px, calc(100vw - 4.5rem)" width="1206" height="2622" alt="PushMe Today screen in Chinese, using demo data. Sprout and a swimming action card with start, complete, and a 15-minute postpone control." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <figcaption>
+            <p>Chinese interface, using demo data. Today, with Sprout and the next action.</p>
+            <p><a href="assets/screenshots/full/today.png">Full-size screenshot</a></p>
+          </figcaption>
+        </figure>
       </article>
-      <article class="card">
-        <h2>Terms of Use</h2>
-        <p>Rules for using PushMe, AI disclaimers, and Apple's standard EULA for licensed apps.</p>
-        <a class="stretch" href="terms.html">Read terms →</a>
+
+      <article class="feature reverse">
+        <div class="feature-copy">
+          <h3>Plan holds the longer view</h3>
+          <p>Plan can show a day, a week, a month, or your goals. This screenshot is the Goals view: three goals, each with a progress ring. They are a two-week swimming goal, 20 minutes of reading, and an evening review.</p>
+          <p>The shot is not a filled-in calendar. Day, week, and month are in the app. They are simply not what this picture shows.</p>
+        </div>
+        <figure class="shot">
+          <div class="phone">
+            <picture>
+              <img src="assets/screenshots/plan.png" srcset="assets/screenshots/plan.png 804w, assets/screenshots/full/plan.png 1206w" sizes="(min-width: 960px) 360px, calc(100vw - 4.5rem)" width="1206" height="2622" alt="PushMe Plan screen in Chinese on the Goals tab, using demo data. Three goals with progress rings: swimming, reading, and an evening review. Not a populated calendar." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <figcaption>
+            <p>Chinese interface, using demo data. Plan, on Goals. Day, week, and month are in the app. This picture is not a populated calendar.</p>
+            <p><a href="assets/screenshots/full/plan.png">Full-size screenshot</a></p>
+          </figcaption>
+        </figure>
       </article>
-      <article class="card">
-        <h2>Support &amp; FAQ</h2>
-        <p>Reminders, data deletion, AI content, and how to report issues.</p>
-        <a class="stretch" href="support.html">Get support →</a>
+
+      <article class="feature">
+        <div class="feature-copy">
+          <h3>A companion you can change</h3>
+          <p>The companion is another you. It shows up on Today and in chat. You can switch among colorful official object avatars. Sprout is the current default.</p>
+          <p>In this screenshot Sprout is selected. Other objects on the grid include a controller, a barbell, a lightbulb, a chat bubble, a watering can, a book, a brain, a bull, a bunny, a camera, and a cat.</p>
+        </div>
+        <figure class="shot">
+          <div class="phone">
+            <picture>
+              <img src="assets/screenshots/twin.png" srcset="assets/screenshots/twin.png 804w, assets/screenshots/full/twin.png 1206w" sizes="(min-width: 960px) 360px, calc(100vw - 4.5rem)" width="1206" height="2622" alt="PushMe companion screen in Chinese, using demo data. A large green Sprout avatar above a grid of colorful official object avatars, with Sprout selected." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <figcaption>
+            <p>Chinese interface, using demo data. Sprout, the current default, and the official object avatars.</p>
+            <p><a href="assets/screenshots/full/twin.png">Full-size screenshot</a></p>
+          </figcaption>
+        </figure>
       </article>
-      <article class="card">
-        <h2>Contact</h2>
-        <p>Questions about the app, privacy, or your data.</p>
-        <a class="stretch" href="mailto:wangyiheng0201@163.com">wangyiheng0201@163.com</a>
+
+      <article class="feature reverse">
+        <div class="feature-copy">
+          <h3>Chat, then you decide</h3>
+          <p>Chat is for talking through a goal and changing the next steps. In this demo, wanting to learn freestyle breathing on weekday evenings becomes a 14-day proposal: about 45 minutes a day, after 19:00, starting with getting comfortable in the water.</p>
+          <p>The plan waits. You can confirm the schedule or ask for a change. Read AI suggestions before you confirm them. You keep control of the plan and of what you actually do.</p>
+        </div>
+        <figure class="shot">
+          <div class="phone">
+            <picture>
+              <img src="assets/screenshots/chat.png" srcset="assets/screenshots/chat.png 804w, assets/screenshots/full/chat.png 1206w" sizes="(min-width: 960px) 360px, calc(100vw - 4.5rem)" width="1206" height="2622" alt="PushMe chat screen in Chinese, using demo data. A conversation about learning freestyle breathing and a 14-day plan waiting to be confirmed or adjusted. The header shows an older persona tag that is not product positioning." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <figcaption>
+            <p>Chinese interface, using demo data. A proposed plan waiting for confirmation. The header in this screenshot still shows an older persona tag, 洞察拆解型. That tag is not how PushMe is positioned.</p>
+            <p><a href="assets/screenshots/full/chat.png">Full-size screenshot</a></p>
+          </figcaption>
+        </figure>
       </article>
-    </div>
+    </section>
+
+    <section class="section note" aria-labelledby="preview-title">
+      <h2 id="preview-title">A preview, with you in charge</h2>
+      <p>PushMe is in development preview. This site does not offer a download link, a waitlist, or a price.</p>
+      <p>AI output can be wrong or a poor fit. Review it, adjust the plan, and confirm only what you want. PushMe does not promise a particular result.</p>
+      <p>Questions, privacy requests, and bug reports go to <a href="support.html">Support</a> or <a href="mailto:wangyiheng0201@163.com">wangyiheng0201@163.com</a>.</p>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -61,8 +201,10 @@
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
       <a href="support.html">Support</a>
-      <a href="zh/index.html">简体中文</a>
+      <a href="zh/index.html" hreflang="zh-Hans">简体中文</a>
     </nav>
+    <p>PushMe is a native iOS app in development preview. Operated by Yiheng Wang.</p>
+    <p><a href="mailto:wangyiheng0201@163.com">wangyiheng0201@163.com</a></p>
     <p>© 2026 Yiheng Wang. PushMe.</p>
   </footer>
 </body>

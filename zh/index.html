@@ -3,11 +3,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PushMe — AI 任务督促与数字分身。隐私、条款与支持。">
-  <title>PushMe — AI 任务督促</title>
+  <title>PushMe — 另一个我，陪你迈出下一步</title>
+  <meta name="description" content="PushMe 是一款开发预览中的原生 iOS 应用。另一个我帮你把目标谈成可审阅的计划，再落到今天的一项具体行动。">
+  <link rel="canonical" href="https://henrywang0201.github.io/pushme/zh/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://henrywang0201.github.io/pushme/zh/">
+  <link rel="alternate" hreflang="en" href="https://henrywang0201.github.io/pushme/">
+  <link rel="alternate" hreflang="x-default" href="https://henrywang0201.github.io/pushme/">
+  <meta property="og:title" content="PushMe — 另一个我，陪你迈出下一步">
+  <meta property="og:description" content="原生 iOS 同伴应用：把目标变成你确认过的计划，以及今天的下一项行动。开发预览。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://henrywang0201.github.io/pushme/zh/">
+  <meta property="og:image" content="https://henrywang0201.github.io/pushme/assets/screenshots/today.png">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale:alternate" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f6f5f7">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/home.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PushMe",
+    "operatingSystem": "iOS",
+    "applicationCategory": "LifestyleApplication",
+    "url": "https://henrywang0201.github.io/pushme/zh/",
+    "description": "一款原生 iOS 应用。另一个我帮你把目标变成确认过的计划，以及今天的下一项具体行动。",
+    "author": {
+      "@type": "Person",
+      "name": "Yiheng Wang"
+    },
+    "inLanguage": ["zh-Hans", "en"]
+  }
+  </script>
 </head>
-<body>
+<body class="home">
+  <a class="skip-link" href="#main">跳到正文</a>
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html">
@@ -15,45 +47,153 @@
         PushMe
       </a>
       <nav class="nav" aria-label="主导航">
-        <a href="index.html" aria-current="page">首页</a>
+        <a href="#path">怎么走</a>
+        <a href="#screenshots">截图</a>
+        <a href="support.html">支持</a>
         <a href="privacy.html">隐私</a>
         <a href="terms.html">条款</a>
-        <a href="support.html">支持</a>
       </nav>
       <a class="lang-toggle" href="../index.html" hreflang="en">English</a>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>PushMe</h1>
-      <p class="tagline">AI 辅助任务拆解与督促，数字分身陪你养成习惯。</p>
-      <p>PushMe 帮助你将目标拆成可执行步骤、安排提醒，并通过连续打卡与分身成长保持动力。任务拆解由 AI 辅助完成；由你确认并执行的内容始终由你掌控。</p>
-      <p class="app-store-note">除中国大陆外，可在各 App Store 地区下载。由 Yiheng Wang（个人开发者）运营。</p>
+  <main id="main">
+    <section class="intro" aria-labelledby="hero-title">
+      <div>
+        <p class="kicker">开发预览 · 原生 iOS</p>
+        <h1 id="hero-title">另一个我，陪你迈出下一步。</h1>
+        <p class="lede">PushMe 是一款原生 iOS 应用。另一个我在旁边，帮你把目标变成今天就能开始的事。</p>
+        <p>用平常的话把目标说出来。PushMe 草拟一份分阶段的计划。你先看，再改，确认之后才算数。今天页接着给出下一项具体行动，写明时间和时长。你可以开始、完成，或推迟 15 分钟。经验、等级、连续天数和五个成长维度，记下你走过来的进度。</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#path">看看这条路</a>
+          <a class="btn btn-ghost" href="#screenshots">看截图</a>
+          <a class="btn btn-ghost" href="support.html">支持</a>
+        </div>
+        <p class="quiet">这是开发预览。本页不提供 App Store 或 TestFlight 下载链接。</p>
+      </div>
+      <figure class="shot">
+        <div class="phone">
+          <picture>
+            <img src="../assets/screenshots/today.png" srcset="../assets/screenshots/today.png 804w, ../assets/screenshots/full/today.png 1206w" sizes="(min-width: 960px) 360px, calc(100vw - 4.5rem)" width="1206" height="2622" alt="PushMe 今天页，中文界面，演示数据。绿色 Sprout 同伴旁边是 19:00 的游泳行动，可以开始、完成或推迟 15 分钟，并显示等级、经验、连续天数和五个成长维度。" fetchpriority="high" decoding="async">
+          </picture>
+        </div>
+        <figcaption>
+          <p>中文界面，演示数据。今天页：Sprout 和下一项行动。</p>
+          <p><a href="../assets/screenshots/full/today.png">查看原尺寸截图</a></p>
+        </figcaption>
+      </figure>
     </section>
 
-    <div class="card-grid">
-      <article class="card">
-        <h2>隐私政策</h2>
-        <p>收集哪些信息、AI 处理方、你的权利及如何删除数据。</p>
-        <a class="stretch" href="privacy.html">阅读隐私政策 →</a>
+    <section class="section" id="path" aria-labelledby="path-title">
+      <h2 id="path-title">从目标到下一步</h2>
+      <p class="section-intro">这条路故意留得很短。该由你决定的地方，都停下来等你。</p>
+      <ol class="steps">
+        <li>
+          <h3><span class="num" aria-hidden="true">1</span> 先说清楚</h3>
+          <p>像跟另一个人说话那样讲目标。聊天用来商量目标，也用来改下一步。</p>
+        </li>
+        <li>
+          <h3><span class="num" aria-hidden="true">2</span> 审计划</h3>
+          <p>PushMe 用 AI 辅助，给出分阶段的任务计划。你可以调整。你确认之前，不会写进日程。</p>
+        </li>
+        <li>
+          <h3><span class="num" aria-hidden="true">3</span> 做下一项</h3>
+          <p>今天页展示下一项行动的时间和时长。开始、完成，或推迟 15 分钟。</p>
+        </li>
+        <li>
+          <h3><span class="num" aria-hidden="true">4</span> 看见成长</h3>
+          <p>完成行动会得到经验。等级、连续天数和五个成长维度留在这里。</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="screenshots" aria-labelledby="screenshots-title">
+      <h2 id="screenshots-title">应用里长什么样</h2>
+      <p class="section-intro">下面是 iOS 应用的真实画面。界面是中文，目标内容是演示数据。</p>
+
+      <article class="feature">
+        <div class="feature-copy">
+          <h3>今天把下一步放在手边</h3>
+          <p>Sprout 是一株绿色小芽，也是当前的默认同伴。在今天页，它和下一项要做的事待在一起。这张演示里，那一项是 19:00、45 分钟的游泳，属于「两周学会游泳」。</p>
+          <p>卡片写着时间、时长，以及完成后的成长。你可以开始、标记完成，或推迟 15 分钟。等级、经验、连续天数和五个维度也在这一屏。</p>
+        </div>
+        <figure class="shot">
+          <div class="phone">
+            <picture>
+              <img src="../assets/screenshots/today.png" srcset="../assets/screenshots/today.png 804w, ../assets/screenshots/full/today.png 1206w" sizes="(min-width: 960px) 360px, calc(100vw - 4.5rem)" width="1206" height="2622" alt="PushMe 今天页，中文界面，演示数据。Sprout 和游泳行动卡片，含开始、完成和推迟 15 分钟。" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <figcaption>
+            <p>中文界面，演示数据。今天页：Sprout 和下一项行动。</p>
+            <p><a href="../assets/screenshots/full/today.png">查看原尺寸截图</a></p>
+          </figcaption>
+        </figure>
       </article>
-      <article class="card">
-        <h2>使用条款</h2>
-        <p>使用规则、AI 免责声明，以及 Apple 标准许可协议。</p>
-        <a class="stretch" href="terms.html">阅读条款 →</a>
+
+      <article class="feature reverse">
+        <div class="feature-copy">
+          <h3>计划页看更长的一段</h3>
+          <p>计划可以按日、周、月或目标来看。这张截图是「目标」：三个目标，各有一圈进度。分别是两周学会游泳、阅读 20 分钟，以及晚间复盘。</p>
+          <p>它不是一张已经排满的日历。日、周、月也在应用里，只是这张图没有展示。</p>
+        </div>
+        <figure class="shot">
+          <div class="phone">
+            <picture>
+              <img src="../assets/screenshots/plan.png" srcset="../assets/screenshots/plan.png 804w, ../assets/screenshots/full/plan.png 1206w" sizes="(min-width: 960px) 360px, calc(100vw - 4.5rem)" width="1206" height="2622" alt="PushMe 计划页的目标视图，中文界面，演示数据。三个带进度环的目标：游泳、阅读和晚间复盘。不是已排满的日历。" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <figcaption>
+            <p>中文界面，演示数据。计划页的「目标」。日、周、月也在应用里。这张图不是已排满的日历。</p>
+            <p><a href="../assets/screenshots/full/plan.png">查看原尺寸截图</a></p>
+          </figcaption>
+        </figure>
       </article>
-      <article class="card">
-        <h2>支持与常见问题</h2>
-        <p>提醒、删除数据、AI 内容及举报不当输出。</p>
-        <a class="stretch" href="support.html">获取支持 →</a>
+
+      <article class="feature">
+        <div class="feature-copy">
+          <h3>可以更换的同伴</h3>
+          <p>同伴是另一个我，出现在今天和聊天里。你可以换成一套彩色的官方物件形象。Sprout 是当前默认。</p>
+          <p>这张图里 Sprout 被选中。格子里还能看到手柄、杠铃、灯泡、对话气泡、洒水壶、书、大脑、牛、兔子、相机和猫。</p>
+        </div>
+        <figure class="shot">
+          <div class="phone">
+            <picture>
+              <img src="../assets/screenshots/twin.png" srcset="../assets/screenshots/twin.png 804w, ../assets/screenshots/full/twin.png 1206w" sizes="(min-width: 960px) 360px, calc(100vw - 4.5rem)" width="1206" height="2622" alt="PushMe 同伴页，中文界面，演示数据。大号绿色 Sprout，下方是彩色官方物件形象，Sprout 为选中状态。" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <figcaption>
+            <p>中文界面，演示数据。当前默认形象 Sprout，以及官方物件形象。</p>
+            <p><a href="../assets/screenshots/full/twin.png">查看原尺寸截图</a></p>
+          </figcaption>
+        </figure>
       </article>
-      <article class="card">
-        <h2>联系</h2>
-        <p>有关 App、隐私或数据的问题。</p>
-        <a class="stretch" href="mailto:wangyiheng0201@163.com">wangyiheng0201@163.com</a>
+
+      <article class="feature reverse">
+        <div class="feature-copy">
+          <h3>先聊，再由你决定</h3>
+          <p>聊天用来商量目标，也用来调整下一步。这张演示里，想在工作日晚上学会自由泳换气，变成一份 14 天的提议：每天大约 45 分钟，19:00 之后，先熟悉水性，再练换气。</p>
+          <p>计划停在这里等你。你可以确认，也可以要求调整。请先看过 AI 的建议，再确认。计划和你真正要做的事，仍由你决定。</p>
+        </div>
+        <figure class="shot">
+          <div class="phone">
+            <picture>
+              <img src="../assets/screenshots/chat.png" srcset="../assets/screenshots/chat.png 804w, ../assets/screenshots/full/chat.png 1206w" sizes="(min-width: 960px) 360px, calc(100vw - 4.5rem)" width="1206" height="2622" alt="PushMe 聊天页，中文界面，演示数据。关于学习自由泳换气的对话，以及一份等待确认或调整的 14 天计划。标题栏里的旧人设标签不代表产品定位。" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <figcaption>
+            <p>中文界面，演示数据。一份待确认的计划。这张截图的标题栏里还有旧的人设标签「洞察拆解型」，它不代表产品的定位。</p>
+            <p><a href="../assets/screenshots/full/chat.png">查看原尺寸截图</a></p>
+          </figcaption>
+        </figure>
       </article>
-    </div>
+    </section>
+
+    <section class="section note" aria-labelledby="preview-title">
+      <h2 id="preview-title">开发预览，决定权在你</h2>
+      <p>PushMe 仍是开发预览。本站不提供下载链接、等候名单或价格。</p>
+      <p>AI 写的内容可能不准，也可能不适合你。请先审阅、再调整，只确认你认可的部分。PushMe 不保证某个结果。</p>
+      <p>问题、隐私请求和缺陷反馈，请到<a href="support.html">支持</a>，或写信给 <a href="mailto:wangyiheng0201@163.com">wangyiheng0201@163.com</a>。</p>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -61,8 +201,10 @@
       <a href="privacy.html">隐私</a>
       <a href="terms.html">条款</a>
       <a href="support.html">支持</a>
-      <a href="../index.html">English</a>
+      <a href="../index.html" hreflang="en">English</a>
     </nav>
+    <p>PushMe 是一款开发预览中的原生 iOS 应用。运营者：Yiheng Wang。</p>
+    <p><a href="mailto:wangyiheng0201@163.com">wangyiheng0201@163.com</a></p>
     <p>© 2026 Yiheng Wang. PushMe.</p>
   </footer>
 </body>
